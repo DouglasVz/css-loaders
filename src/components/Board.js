@@ -1,5 +1,5 @@
 import './Board.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import RollerSpinner from './loaders/roller-spinner';
 import RingSpinner from './loaders/ring-spinner';
@@ -11,6 +11,7 @@ import EllipsisSpinner from './loaders/ellipsis-spinner';
 import RippleSpinner from './loaders/ripple-spinner';
 import Grid from './loaders/grid';
 import Modal from './Modal';
+import LoaderSource from './loader-source';
 
 function Board () {
     const [modalStatus, setModalStatus] = useState(false);
@@ -33,8 +34,7 @@ function Board () {
             <RippleSpinner toggle={toggle}/>
             <Grid toggle={toggle}/>
             <Modal active={modalStatus} toggle={toggle}>
-                <textarea style={{height:'20%'}} defaultValue={currentCode.html}></textarea>
-                <textarea style={{height:'50%'}} defaultValue={currentCode.css}></textarea>
+                <LoaderSource html={currentCode.html} css={currentCode.css}/>
             </Modal>
         </div>
     )
