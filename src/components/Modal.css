@@ -55,6 +55,7 @@
 @keyframes modalIntro {
     from {
         transform: translate(-47%,-47%);
+        opacity: 0;
     }
 }
 
