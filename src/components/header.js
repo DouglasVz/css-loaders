@@ -17,7 +17,7 @@ function Header() {
             <nav isopen={navOpen.toString()}>
                 <ul>
                     <li>
-                        <a href="">Check it on GitHub</a>
+                        <a href="https://github.com/DouglasVz/css-loaders">Check it on GitHub</a>
                     </li>
                     <li>
                         <a href="https://www.douglasvg.com">More projects</a>
