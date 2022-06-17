@@ -1,29 +1,29 @@
 import './dual-ring-spinner.css';
 
 const source = {
-    css: `.lds-dual-ring {
-        display: inline-block;
-        width: 80px;
-        height: 80px;
-      }
-    .lds-dual-ring:after {
-      content: " ";
-      display: block;
-      width: 64px;
-      height: 64px;
-      margin: 8px;
-      border-radius: 50%;
-      border: 6px solid #fff;
-      border-color: #fff transparent #fff transparent;
-      animation: lds-dual-ring 1.2s linear infinite;
-    }
-    @keyframes lds-dual-ring {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
+    css: `.lds-dual-ring {\n
+        display: inline-block;\n
+        width: 80px;\n
+        height: 80px;\n
+      }\n
+    .lds-dual-ring:after {\n
+      content: " ";\n
+      display: block;\n
+      width: 64px;\n
+      height: 64px;\n
+      margin: 8px;\n
+      border-radius: 50%;\n
+      border: 6px solid #fff;\n
+      border-color: #fff transparent #fff transparent;\n
+      animation: lds-dual-ring 1.2s linear infinite;\n
+    }\n
+    @keyframes lds-dual-ring {\n
+      0% {\n
+        transform: rotate(0deg);\n
+      }\n
+      100% {\n
+        transform: rotate(360deg);\n
+      }\n
     }`,
     html: `<div className="lds-dual-ring"></div>`
 }

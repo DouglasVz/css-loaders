@@ -1,18 +1,52 @@
 .App {
   width: 100vw;
-  height: 100vh;
-  background-color: rgb(6, 43, 75);
+  min-height: 100vh;
+  background-color: var(--color-0);
 }
 
 .App-body {
-  height: 100%;
+  min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.Use-cont {
+  background: rgba(255, 255, 255, 0.247);
+  padding: 1rem;
+  box-sizing: border-box;
+  color: white;
+}
+
+.Use-cont h1 {
+  text-align: center;
+}
+
+.Use-cont ul {
+  line-height: calc(20px + 1vmin);
+}
+
+footer {
+    width: 100%;
+    height: var(--footer-height);
+    background: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
 @media (max-width: 1000px) {
-  .App {
-    height: 100%;
-  }
+    .App-body {
+        padding-top: 3rem;
+        flex-direction: column;
+    }
+
+    .Use-cont {
+        width: 80%;
+    }
 }

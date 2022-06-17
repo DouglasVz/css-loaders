@@ -110,4 +110,8 @@
         font-size: 12px;
         margin: 0 0.2rem 0 0;
     }
+
+    .source::-webkit-scrollbar {
+        width: 2px;
+    }
 }
